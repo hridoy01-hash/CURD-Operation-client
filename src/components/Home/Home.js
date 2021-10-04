@@ -17,12 +17,12 @@ const Home = () => {
     return (
         <div className="mb-5">
           <WebsiteBaner></WebsiteBaner>
-          <h1 className="text-center mt-5">Our Running Sevices</h1>
+          <h1 className="text-center mt-5">Our Running Courses</h1>
           <Container>
-         <Row className="justify-content-md-center mt-5" xs={1} md={3}>
+         <Row xs={1} md={4} className="g-2 mt-5">
            
          {
-         courses.slice(0,3).map(course => <HomePageCourse key={course.Instructorid} course={course}></HomePageCourse>)
+         courses.slice(0,4).map(course => <HomePageCourse key={course.Instructorid} course={course}></HomePageCourse>)
          } 
             
          </Row>

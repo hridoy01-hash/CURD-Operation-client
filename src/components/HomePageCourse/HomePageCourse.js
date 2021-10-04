@@ -8,9 +8,9 @@ const HomePageCourse = (props) => {
     return (
         <div>
      <Col>
-        <Card className="service">
-            <Card.Img variant="top" src={img} />
-            <Card.Body>
+        <Card>
+            <Card.Img style={{height:"200px"}} variant="top" src={img} />
+            <Card.Body style={{height:"200px"}} >
             <Card.Title>Subject: {CourseName}</Card.Title>
             <Card.Text>Instructor Name: {InstructorName}</Card.Text>
             <Card.Text>Course Price: {CoursePrice} Taka</Card.Text>

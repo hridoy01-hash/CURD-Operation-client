@@ -21,7 +21,7 @@ const Header = () => {
     <NavLink to="/home">
        <img style={{height:"48px"}} src={logo} alt="" /> 
     </NavLink>
-    <span>Leader of EnterprenureShip</span>
+    <span>Leader Of EnterprenureShip</span>
     
     {/* NavLink for Route */}
     

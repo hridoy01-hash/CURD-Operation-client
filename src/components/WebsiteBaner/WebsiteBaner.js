@@ -10,7 +10,6 @@ const WebsiteBaner = () => {
   //Slider section for website banar
     return (
         <div className="mt-2">
-        <h1 className="text-center fw-bold text-dark">Our Upcomeing Excited Courses</h1>
         <Container>
         {
             
