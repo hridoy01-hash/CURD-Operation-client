@@ -1,6 +1,6 @@
 # Leader of EnterprenureShip
 
-This project was Online Education with [Visit Live Website](https://github.com/facebook/create-react-app).
+This project was Online Education with [Visit Live Website](https://suspicious-darwin-8e7e22.netlify.app/).
 
 ## Purpose of this project
 
