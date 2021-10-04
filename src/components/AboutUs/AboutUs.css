@@ -1,0 +1,10 @@
+/* About us style */
+.company-focus{
+    display: flex;
+    height: 250px;
+    
+}
+.Misson{
+    height: 250px;
+    background-color: rgb(185, 21, 21);
+}

@@ -1,0 +1,65 @@
+[
+    {
+      "Instructorid": 1,
+      "InstructorName": "Abid Rahman",
+      "CourseName": "IT Consulting ",
+      "img": "https://upbeat-wozniak-7d371c.netlify.app/images/corporate.jpg",
+      "CoursePrice": 1299
+    },
+    {
+      "Instructorid": 2,
+      "InstructorName": "Jarin Tasmin",
+      "CourseName": "Event Management ",
+      "img": "https://upbeat-wozniak-7d371c.netlify.app/images/event%20management.jpg",
+      "CoursePrice": 1899
+    },
+    {
+      "Instructorid": 3,
+      "InstructorName": "Abdul Ahad Rahman",
+      "CourseName": "Digital Marketing",
+      "img": "https://upbeat-wozniak-7d371c.netlify.app/images/digital%20marketing.jpg",
+      "CoursePrice": 1799
+    },
+    {
+      "Instructorid": 4,
+      "InstructorName": "Arifur Reza",
+      "CourseName": "Social Engineering",
+      "img": "https://upbeat-wozniak-7d371c.netlify.app/images/social%20engineering.jpg",
+      "CoursePrice": 999
+    },
+    {
+      "Instructorid": 5,
+      "InstructorName": "Hridoy Ahmed",
+      "CourseName": "Startup Frome Sketch",
+      "img": "https://upbeat-wozniak-7d371c.netlify.app/images/startup.jpg",
+      "CoursePrice": 2199
+    },
+    {
+      "Instructorid": 6,
+      "InstructorName": "Ashfakur Rahman",
+      "CourseName": "Corporuate Gruming",
+      "img": "https://upbeat-wozniak-7d371c.netlify.app/images/it%20conseltency.jpg",
+      "CoursePrice": 1199
+    },
+    {
+      "Instructorid": 7,
+      "InstructorName": "Tusar R Ahmed",
+      "CourseName": "Fitness Trainner",
+      "img": "https://upbeat-wozniak-7d371c.netlify.app/images/fitess%20traing.jpg",
+      "CoursePrice": 1599
+    },
+    {
+      "Instructorid": 8,
+      "InstructorName": "Rokibul Hasan Sagor",
+      "CourseName": "Analyze Real Estate Invesment",
+      "img": "https://upbeat-wozniak-7d371c.netlify.app/images/real%20state.jpg",
+      "CoursePrice": 1799
+    },
+    {
+      "Instructorid": 9,
+      "InstructorName": "Junayed Mahmud",
+      "CourseName": "Hotel Management",
+      "img": "https://upbeat-wozniak-7d371c.netlify.app/images/hotel%20management.jpg",
+      "CoursePrice": 1499
+    }
+  ]

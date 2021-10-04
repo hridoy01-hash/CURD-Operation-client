@@ -1,0 +1,13 @@
+/* footer section style */
+.footer{
+    margin-top: 250px;
+    display: flex;
+    background: #000;
+    color: white;
+}
+h4{
+    font-weight: bold;
+}
+li{
+    color: rgb(233, 228, 220);
+}
