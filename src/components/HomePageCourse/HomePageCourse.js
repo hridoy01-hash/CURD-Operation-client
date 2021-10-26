@@ -14,7 +14,7 @@ const HomePageCourse = (props) => {
             <Card.Title>Subject: {CourseName}</Card.Title>
             <Card.Text>Instructor Name: {InstructorName}</Card.Text>
             <Card.Text>Course Price: {CoursePrice} Taka</Card.Text>
-            <Button variant="success">Enrol Now</Button>{' '}
+            <Button variant="success">Enrol Now</Button>
             </Card.Body>
         </Card>
     </Col>

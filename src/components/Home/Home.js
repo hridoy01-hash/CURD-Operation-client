@@ -9,7 +9,7 @@ const Home = () => {
     //Load data frome JSON file
     const [courses,setCourses] = useState([])
     useEffect(()=>{
-        fetch('./fakeData.json')
+        fetch('http://localhost:5000/courses')
         .then(res => res.json())
         .then(data => setCourses(data))
     },[])

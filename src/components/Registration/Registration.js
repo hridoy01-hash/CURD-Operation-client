@@ -1,57 +1,38 @@
-import React from 'react';
-import { Container, Form,Button, Image} from 'react-bootstrap';
-import login from '../../login.jpg'
+import { useForm } from "react-hook-form";
+
 import './Registration.css'
 const Registration = () => {
+    
+    const { register, handleSubmit,reset} = useForm();
+    const onSubmit = data =>{
+        fetch('http://localhost:5000/courses',{
+            method:'POST',
+            headers:{
+                'content-type':'application/json'
+            },
+            body:JSON.stringify(data)
+        })
+        .then(res => res.json())
+        .then(result =>{
+            if(result.insertedId){
+                alert('Course Added Successfully');
+                reset();
+            }
+        })
+        
+    }
     return (
         <div>
-            <div className="text-center mt-5">
-            <h1>Feel Free to Stay With Us</h1>
-            <p>Please Registration</p>
-            </div>
-            <Container>
-            <div className="registration mt-5">
-                <div className="row">
-                    <div className="col-md-7">
-                    <Form>
-                        <Form.Group className="mb-3" controlId="">
-                            <Form.Label>First Name</Form.Label>
-                            <Form.Control type="text" placeholder="Enter Your First Name" />
-                        </Form.Group>
-                        <Form.Group className="mb-3" controlId="">
-                            <Form.Label>Last Name</Form.Label>
-                            <Form.Control type="text" placeholder="Enter Your Last Name" />
-                        </Form.Group>
-                        <Form.Group className="mb-3" controlId="formBasicEmail">
-                            <Form.Label>Email address</Form.Label>
-                            <Form.Control type="email" placeholder="Enter email" />
-                            <Form.Text className="text-muted">
-                            We'll never share your email with anyone else.
-                            </Form.Text>
-                        </Form.Group>
+           <form className="form-style" onSubmit={handleSubmit(onSubmit)}>
+            <input placeholder="courseName" {...register("courseName")} />
+            <input placeholder="InstructorName" {...register("InstructorName")} />
+            <input placeholder="CourseDescription" {...register("CourseDescription")} />
+            <input placeholder="Price" type="number" {...register("CoursePrice")} />
+            <input placeholder="img url" {...register("img")} />
+            <input type="submit" />
+         </form>
+      
 
-                        <Form.Group className="mb-3" controlId="formBasicPassword">
-                            <Form.Label>Password</Form.Label>
-                            <Form.Control type="password" placeholder="Password" />
-                        </Form.Group>
-                        <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                            <Form.Label>Your Message</Form.Label>
-                            <Form.Control as="textarea" rows={3} />
-                        </Form.Group>
-                        <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                            <Form.Check type="checkbox" label="Agree With Term And Condition" />
-                        </Form.Group>
-                        <Button variant="primary" type="submit">
-                            Submit
-                        </Button>
-                        </Form>
-                    </div>
-                    <div className="col-md-5">
-                     <Image style={{height:"500px",paddingLeft:"80px"}} src={login}></Image>
-                    </div>
-                </div>
-            </div>
-            </Container>
         </div>
     );
 };

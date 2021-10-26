@@ -32,7 +32,7 @@ const Header = () => {
     
     <NavLink to="/aboutus" style={{textDecoration:"none",fontSize:"20px", marginRight:"10px",fontWeight:"bold",padding:"6px"}} activeStyle={activeStyle}>About Us</NavLink>
     
-    <NavLink to="/registration" style={{textDecoration:"none",fontSize:"20px", marginRight:"10px",fontWeight:"bold",padding:"6px"}} activeStyle={activeStyle}>Registration </NavLink>
+    <NavLink to="/registration" style={{textDecoration:"none",fontSize:"20px", marginRight:"10px",fontWeight:"bold",padding:"6px"}} activeStyle={activeStyle}>Add Course </NavLink>
 
     </Nav>
     </Container>

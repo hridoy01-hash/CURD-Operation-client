@@ -2,3 +2,14 @@
     display: flex;
     
 }
+.form-style{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-style input{
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+}

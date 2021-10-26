@@ -8,6 +8,7 @@ import Home from './components/Home/Home';
 import NotFound from './components/NotFound/NotFound';
 import Registration from './components/Registration/Registration';
 import Services from './components/Services/Services';
+import UpdateCourse from './components/UpdateCourse/UpdateCourse';
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
           </Route>
           <Route  path="/aboutus">
             <AboutUs></AboutUs>
+          </Route>
+          <Route  path="/courses/update/:id">
+            <UpdateCourse></UpdateCourse>
           </Route>
           <Route  path="/registration">
             <Registration></Registration>
